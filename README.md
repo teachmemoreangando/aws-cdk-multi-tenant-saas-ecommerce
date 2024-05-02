@@ -3,6 +3,9 @@
 This Proof of Concept is about a multi tenant microservices ecommerce application using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 ![architecture-1](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/ccb09c1a-5cec-4eea-b8cc-22a94f3b82e9)
                                    AWS CDK Serverless Microservices Architecture
+- [@Joel O. Wembo](https://www.joelotepawembo.com)
+- [@twitter](twitter.com/joelwembo1)
+- [@linkedin](https://www.linkedin.com/in/joelotepawembo)
 
 ## Tools
 You will need the following tools:
@@ -29,27 +32,39 @@ You will need the following tools:
 
 ## Deploy to AWS 
 
+```
 1. npm run build
+```
+```
 2. cdk diff
+```
+```
 3. Bootstrap
+```
+```
 - export CDK_NEW_BOOTSTRAP=1
 - npx cdk bootstrap --trust=xxxxxxxxxx aws://xxxxxxxxxx/ap-southeast-1 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://xxxxxxxxxx/ap-southeast-1 --verbose --profile=default
-  
+  ```
+```
 3. cdk synth
-
-4. cdk deploy 
-
+```
+```
+4. cdk deploy
+```
+ (Optional )
+```
  - npx cdk deploy --force --require-approval never --method=direct  --no-previous-parameters --profile=default --verbose
 
  - npx cdk deploy --require-approval never --method=direct  --no-previous-parameters --profile=default --verbose --outputs-file ./cdk-outputs.json
-
+```
 # You can also install modules individually
 
+```
 - npm install -g aws-cdk
 - npm install --save @aws-cdk/aws-apigateway
 - npm install --save  @aws-cdk/aws-lambda
 - npm install --save  @aws-cdk/aws-dynamodb
-
+```
 ## AWS Codepipeline
 ![image](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/d97d25fc-76f1-4804-be0f-ea95a9d2a7fc)
 
@@ -67,13 +82,14 @@ You will need the following tools:
  Create RDS Role by creating secret keys
 
 # Get API gateway
-
+```
 aws apigateway get-api-key --api-key API_KEY_ID --include-value
-
+```
 
 ## Kubernetes cluster using cdk8s
+```
 npm run compile && cdk8s synth
-
+```
 Synthesizing application
   - dist/kubernetes.k8s.yaml
 ========================================================================================================
@@ -106,8 +122,9 @@ Synthesizing application
 
 - AWS CDK multi-tenant SaaS application using API Gateway, Lambda, DynamoDB and Codepipeline: https://medium.com/@joelotepawembo/aws-cdk-restful-apis-using-api-gateway-lambda-rds-postgresql-dynamodb-vpc-codepipeline-and-cbb61a6ee0b3
 
-Author : Joel O. Wembo
-LinkedIn: https://www.linkedin.com/in/joelotepawembo/
-Twitter: https://twitter.com/joelwembo1
-Email: joelwembo@outlook.com
-Website: https://joelwembo.com
+- [@Joel O. Wembo](https://www.joelotepawembo.com)
+- [@twitter](twitter.com/joelwembo1)
+- [@linkedin](https://www.linkedin.com/in/joelotepawembo)
+
+
+
