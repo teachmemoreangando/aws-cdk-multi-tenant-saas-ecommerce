@@ -3,9 +3,7 @@
 This Proof of Concept is about a multi tenant microservices ecommerce application using AWS CDK  Infrastructure  with Terraform , CloudFormation, VPC, Typescript, DynamoDB, PostgreSQL, AWS EventBridge,  AWS CodePipeline, AWS SQS/SNS, Kafka and API Gateway.
 ![architecture-1](https://github.com/joelwembo/aws-cdk-infra-poc-1/assets/19718580/ccb09c1a-5cec-4eea-b8cc-22a94f3b82e9)
                                    AWS CDK Serverless Microservices Architecture
-- [@Joel O. Wembo](https://www.joelotepawembo.com)
-- [@twitter](twitter.com/joelwembo1)
-- [@linkedin](https://www.linkedin.com/in/joelotepawembo)
+
 
 ## Tools
 You will need the following tools:
